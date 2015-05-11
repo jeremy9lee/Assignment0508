@@ -10,7 +10,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<jsp:include page = "/views/include/header.jsp" flush="false"/>
+		<c:import url="/views/include/header.jsp"></c:import>
 		</div>
 		<div id="content">
 			<div id="guestbook" class="delete-form">
@@ -28,10 +28,10 @@
 			</div>
 		</div>
 		<div id="navigation">
-			<jsp:include page = "/views/include/navigation.jsp" flush = "false"/>
+		<c:import url="/views/include/navigation.jsp"></c:import>
 		</div>
 		<div id="footer">
-			<jsp:include page = "/views/include/footer.jsp" flush = "false"/>
+		<c:import url="/views/include/footer.jsp"></c:import>
 		</div>
 	</div>
 </body>

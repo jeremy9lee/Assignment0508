@@ -11,7 +11,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<jsp:include page="/views/include/header.jsp" flush="false"/>
+		<c:import url="/views/include/header.jsp"></c:import>
 		</div>
 		<div id="wrapper">
 			<div id="content">
