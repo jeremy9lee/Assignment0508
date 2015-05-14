@@ -20,7 +20,10 @@ public class ActionFactory {
 	}
 
 	public Action getAction(String a) {
-		Action action = new IndexAction();
+		Action action = null;
+		if(a==null || "main".equals(a)){
+		 action = new IndexAction();
+		}
 
 		return action;
 	}

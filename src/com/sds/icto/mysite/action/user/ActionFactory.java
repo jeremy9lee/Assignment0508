@@ -31,6 +31,8 @@ public class ActionFactory {
 			action = new LogOutFormAction();
 		}else if("login".equals(a)){
 			action = new LoginAction();
+		}else if("idCheck".equals(a)){
+			action = new GetMemberAction();
 		}
 
 		return action;

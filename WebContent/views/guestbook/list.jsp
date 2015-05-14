@@ -7,6 +7,7 @@
 <title>mysite</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link href="/mysite/assets/css/guestbook.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
@@ -17,7 +18,7 @@
 			<div id="guestbook">
 				<form action="/mysite/guest" method="post">
 					<input type="hidden" name="a" value="insert">
-					<table>
+					<table class="table table-hover">
 						<tr>
 							<td>이름</td><td><input type="text" name="name"></td>
 							<td>비밀번호</td><td><input type="password" name="pass"></td>
@@ -26,7 +27,7 @@
 							<td colspan=4><textarea name="content" id="content"></textarea></td>
 						</tr>
 						<tr>
-							<td colspan=4 align=right><input type="submit" VALUE=" 확인 "></td>
+							<td colspan=4 align=right><input type="submit" VALUE=" 확인 " class = "btn btn-info"></td>
 						</tr>
 					</table>
 				</form>

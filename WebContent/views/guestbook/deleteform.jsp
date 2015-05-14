@@ -6,6 +6,7 @@
 <title>mysite</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link href="/mysite/assets/css/guestbook.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
@@ -19,12 +20,12 @@
 					<input type='hidden' name="no" value="${no}">
 					<label>비밀번호</label>
 					<input type="password" name="password">
-					<input type="submit" value="확인">
+					<input type="submit" value="확인" class="btn btn-info">
 				</form>
 				<c:if test="${not empty msg }">
 				${msg}
 				</c:if>
-				<a href="/mysite/guest?a=gusetbook">방명록 리스트</a>
+				<a href="/mysite/guest?a=guestbookform">방명록 리스트</a>
 			</div>
 		</div>
 		<div id="navigation">

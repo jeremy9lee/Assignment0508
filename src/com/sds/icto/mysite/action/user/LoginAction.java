@@ -28,9 +28,12 @@ public class LoginAction implements Action {
 
 		MemberVo member = dao.getMember(email, password);
 
+		System.out.println(member + " : ");
 		if (member != null) {
+		
 			HttpSession session = request.getSession(true);
 			session.setAttribute("session", member.getName());
+			session.setAttribute("sessionNo", member.getNo());
 			response.sendRedirect("");
 		} else {
 			response.sendRedirect("member?a=loginform&result=false");

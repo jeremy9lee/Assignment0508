@@ -29,6 +29,8 @@ public class ActionFactory {
 			action = new GuestBookDeleteAction();
 		}else if ("insert".equals(a)) {
 			action = new GuestBookInsertAction();
+		}else if ("guestbook".equals(a)) {
+			action = new GuestBookFormAction();
 		}
 
 		return action;

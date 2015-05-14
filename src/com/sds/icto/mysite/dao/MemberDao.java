@@ -77,12 +77,19 @@ public class MemberDao {
 		ResultSet rs = null;
 		MemberVo member = null;
 
-		String sql = "SELECT * FROM MEMBER WHERE email=? AND password = ?";
+		String sql = "SELECT * FROM MEMBER WHERE email=? ";
 
+		if(password!=null){
+			sql +=" and password = ?";
+		}
+		
+		System.out.println(email + ":" + password);
 		try {
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, email);
-			pstmt.setString(2, password);
+			if(password!=null){
+				pstmt.setString(2, password);
+			}
 			rs = pstmt.executeQuery();
 
 			if (rs.next()) {

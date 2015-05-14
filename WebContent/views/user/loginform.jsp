@@ -8,6 +8,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link href="/mysite/assets/css/user.css" rel="stylesheet"
 	type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
@@ -27,7 +28,7 @@
 						<p>로그인이 실패 했습니다.</p>
 					</c:if>
 					
-					<input type="submit" value="로그인">
+					<input type="submit" value="로그인" class="btn btn-info">
 				</form>
 			</div>
 		</div>
